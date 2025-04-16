@@ -361,54 +361,149 @@
                                         <label>Department</label>
                                         <select name="department" class="form-control custom-select" required>
                                             <option>Select Department</option>
-                                            <option value="Municipal Agricultural Services Office" {{ $employee->department === 'Municipal Agricultural Services Office' ? 'selected' : '' }}>Municipal Agricultural Services Office</option>
-                                            <option value="Municipal Social Welfare & Development Office" {{ $employee->department === 'Municipal Social Welfare & Development Office' ? 'selected' : '' }}>Municipal Social Welfare & Development Office</option>
-                                            <option value="Municipal Assessor's Office"{{ $employee->department === "Municipal Assessor's Office" ? 'selected' : '' }}>Municipal Assessor's Office</option>
-                                            <option value="Commision on Election" {{ $employee->department === 'Commision on Election' ? 'selected' : '' }}>Commision on Election</option>
-                                            <option value="Local Civil Registrar" {{ $employee->department === 'Local Civil Registrar' ? 'selected' : '' }}>Local Civil Registrar</option>
-                                            <option value="Budget Office" {{ $employee->department === 'Budget Office' ? 'selected' : '' }}>Budget Office</option>
-                                            <option value="BOMWASA AND BIR" {{ $employee->department === 'BOMWASA AND BIR' ? 'selected' : '' }}>BOMWASA AND BIR</option>
-                                            <option value="Accounting Office" {{ $employee->department === 'Accounting Office' ? 'selected' : '' }}>Accounting Office</option>
-                                            <option value="PESO" {{ $employee->department === 'PESO' ? 'selected' : '' }}>PESO</option>
-                                            <option value="Municipal Treasurer's Office" {{ $employee->department === "Municipal Treasurer's Office" ? 'selected' : '' }}>Municipal Treasurer's Office</option>
-                                            <option value="Cogressman's Office" {{ $employee->department === "Congressman's Office" ? 'selected' : '' }}>Congressman's Office</option>
-                                            <option value="Human Resource Management Office" {{ $employee->department === 'Human Resource Management Office' ? 'selected' : '' }}>Human Resource Management Office</option>
-                                            <option value="MPDC" {{ $employee->department === 'MPDC' ? 'selected' : '' }}>MPDC</option>
-                                            <option value="KALAHI" {{ $employee->department === 'KALAHI' ? 'selected' : '' }}>KALAHI</option>
-                                            <option value="Office of the Sangguniang Bayan" {{ $employee->department === 'Office of the Sangguniang Bayan' ? 'selected' : '' }}>Office of the Sangguniang Bayan</option>
-                                            <option value="Office of the Vice-Mayor" {{ $employee->department === 'Office of the Vice-Mayor' ? 'selected' : '' }}>Office of the Vice-Mayor</option>
                                             <option value="Office of the Mayor" {{ $employee->department === 'Office of the Mayor' ? 'selected' : '' }}>Office of the Mayor</option>
-                                            <option value="Engineering Office" {{ $employee->department === 'Engineering Office' ? 'selected' : '' }}>Engineering Office</option>
-                                            <option value="MENRO" {{ $employee->department === 'MENRO' ? 'selected' : '' }}>MENRO</option>
-                                            <option value="Tourism" {{ $employee->department === 'Tourism' ? 'selected' : '' }}>Tourism</option>
+                                            <option value="Office of the Mayor - BAC" {{ $employee->department === 'Office of the Mayor - BAC' ? 'selected' : '' }}>Office of the Mayor - BAC</option>
+                                            <option value="Office of the Mayor - BIR" {{ $employee->department === 'Office of the Mayor - BIR' ? 'selected' : '' }}>Office of the Mayor - BIR</option>
+                                            <option value="Office of the Mayor - BOMWASA" {{ $employee->department === 'Office of the Mayor - BOMWASA' ? 'selected' : '' }}>Office of the Mayor - BOMWASA</option>
+                                            <option value="Office of the Mayor - COMELEC" {{ $employee->department === 'Office of the Mayor - COMELEC' ? 'selected' : '' }}>Office of the Mayor - COMELEC</option>
+                                            <option value="Office of the Mayor - DILG" {{ $employee->department === 'Office of the Mayor - DILG' ? 'selected' : '' }}>Office of the Mayor - DILG</option>
+                                            <option value="Office of the Mayor - MOTORPOOL" {{ $employee->department === 'Office of the Mayor - MOTORPOOL' ? 'selected' : '' }}>Office of the Mayor - MOTORPOOL</option>
+                                            <option value="Office of the Mayor - General Services Office" {{ $employee->department === 'Office of the Mayor - General Services Office' ? 'selected' : '' }}>Office of the Mayor - General Services Office</option>
+                                            <option value="Office of the Mayor - Human Resource Management Office" {{ $employee->department === 'Office of the Mayor - Human Resource Management Office' ? 'selected' : '' }}>Office of the Mayor - Human Resource Management Office</option>
+                                            <option value="Office of the Mayor - Municipal Tourism Office" {{ $employee->department === 'Office of the Mayor - Municipal Tourism Office' ? 'selected' : '' }}>Office of the Mayor - Municipal Tourism Office</option>
+                                            <option value="Office of the Mayor – Municipal Environment and Natural Resources Office" {{ $employee->department === 'Office of the Mayor – Municipal Environment and Natural Resources Office' ? 'selected' : '' }}>Office of the Mayor – Municipal Environment and Natural Resources Office</option>
+                                            <option value="Office of the Sangguniang Bayan" {{ $employee->department === 'Office of the Sangguniang Bayan' ? 'selected' : '' }}>Office of the Sangguniang Bayan</option>
+                                            <option value="Municipal Agricultural Services Office" {{ $employee->department === 'Municipal Agricultural Services Office' ? 'selected' : '' }}>Municipal Agricultural Services Office</option>
+                                            <option value="Municipal Disaster Risk Reduction and Management Office" {{ $employee->department === 'Municipal Disaster Risk Reduction and Management Office' ? 'selected' : '' }}>Municipal Disaster Risk Reduction and Management Office</option>
+                                            <option value="Municipal Social Welfare and Development Office" {{ $employee->department === 'Municipal Social Welfare and Development Office' ? 'selected' : '' }}>Municipal Social Welfare and Development Office</option>
+                                            <option value="Municipal Social Welfare and Development Office - 4Ps" {{ $employee->department === 'Municipal Social Welfare and Development Office - 4Ps' ? 'selected' : '' }}>Municipal Social Welfare and Development Office - 4Ps</option>
+                                            <option value="Municipal Social Welfare and Development Office - KALAHI" {{ $employee->department === 'Municipal Social Welfare and Development Office - KALAHI' ? 'selected' : '' }}>Municipal Social Welfare and Development Office - KALAHI</option>
+                                            <option value="Municipal Social Welfare and Development Office - OSCA" {{ $employee->department === 'Municipal Social Welfare and Development Office - OSCA' ? 'selected' : '' }}>Municipal Social Welfare and Development Office - OSCA</option>
+                                            <option value="Office of the Municipal Accountant" {{ $employee->department === 'Office of the Municipal Accountant' ? 'selected' : '' }}>Office of the Municipal Accountant</option>
+                                            <option value="Office of the Municipal Assessor" {{ $employee->department === 'Office of the Municipal Assessor' ? 'selected' : '' }}>Office of the Municipal Assessor</option>
+                                            <option value="Office of the Municipal Budget Officer" {{ $employee->department === 'Office of the Municipal Budget Officer' ? 'selected' : '' }}>Office of the Municipal Budget Officer</option>
+                                            <option value="Office of the Municipal Civil Registrar" {{ $employee->department === 'Office of the Municipal Civil Registrar' ? 'selected' : '' }}>Office of the Municipal Civil Registrar</option>
+                                            <option value="Office of the Municipal Engineer" {{ $employee->department === 'Office of the Municipal Engineer' ? 'selected' : '' }}>Office of the Municipal Engineer</option>
+                                            <option value="Office of the Municipal Planning and Development Coordinator" {{ $employee->department === 'Office of the Municipal Planning and Development Coordinator' ? 'selected' : '' }}>Office of the Municipal Planning and Development Coordinator</option>
+                                            <option value="Office of the Municipal Treasurer" {{ $employee->department === 'Office of the Municipal Treasurer' ? 'selected' : '' }}>Office of the Municipal Treasurer</option>
                                             <option value="Rural Health Unit" {{ $employee->department === 'Rural Health Unit' ? 'selected' : '' }}>Rural Health Unit</option>
-                                            <option value="DILG" {{ $employee->department === 'DILG' ? 'selected' : '' }}>DILG</option>
-                                            <option value="MDRR" {{ $employee->department === 'MDRR' ? 'selected' : '' }}>MDRR</option>
-                                            <option value="GSO" {{ $employee->department === 'GSO' ? 'selected' : '' }}>GSO</option>
-                                            <option value="DSWD" {{ $employee->department === 'DSWD' ? 'selected' : '' }}>DSWD</option>
-                                            <option value="Department of Trade and Industry" {{ $employee->department === 'Department of Trade and Industry' ? 'selected' : '' }}>Department of Trade and Industry</option>
+                                        </select>
 
                                         </select>
                                     </div>
                                     <div class="form-group col-md-4 m-t-20">
-                                        <label>Position Title</label>
-                                        <select name="position" class="form-control custom-select" required>
-                                            <option>Select Position Title</option>
-                                            <option value="Municipal Government Department Head I" {{ $employee->position === 'Municipal Government Department Head' ? 'selected' : '' }}>Municipal Government Department Head I</option>
-                                            <option value="Registration Officer II" {{ $employee->position === 'Registration Officer II' ? 'selected' : '' }}>Registration Officer II</option>
-                                            <option value="Social Welfare Officer II" {{ $employee->position === 'Social Welfare Officer II' ? 'selected' : '' }}>Social Welfare Officer II</option>
-                                            <option value="Administrative Assistant II" {{ $employee->position === 'Administrative Assistant II' ? 'selected' : '' }}>Administrative Assistant II</option>
-                                            <option value="Day Care Worker I" {{ $employee->position === 'Day Care Worker I' ? 'selected' : '' }}>Day Care Worker I</option>
-                                            <option value="Municipal Agriculturist I" {{ $employee->position === 'Municipal Agriculturist I' ? 'selected' : '' }}>Municipal Agriculturist I</option>
-                                            <option value="Agricultural Technologist" {{ $employee->position === 'Agricultural Technologist' ? 'selected' : '' }}>Agricultural Technologist</option>
-                                            <option value="Agricultural Technician II" {{ $employee->position === 'Agricultural Technician II' ? 'selected' : '' }}>Agricultural Technician II</option>
-                                            <option value="Administrative Aide I" {{ $employee->position === 'Administrative Aide I' ? 'selected' : '' }}>dministrative Aide I</option>
-                                            <option value="Engineer II" {{ $employee->position === 'Engineer II' ? 'selected' : '' }}>Engineer II</option>
-                                            <option value="Administrative Aide II" {{ $employee->position === 'Administrative Aide II' ? 'selected' : '' }}>Administrative Aide II</option>
-                                            <option value="Administrative Aide III" {{ $employee->position === 'Administrative Aide III' ? 'selected' : '' }}>Administrative Aide III</option>
-                                            <option value="Mechanic II" {{ $employee->position === 'Mechanic II' ? 'selected' : '' }}>Mechanic II</option>
-                                        </select>
-                                    </div>
+                                    <label>Position Title</label>
+                                    <select name="position" class="form-control custom-select" required>
+                                        <option>Select Position Title</option>
+                                        <option value="MUNICIPAL MAYOR" {{ $employee->position === 'MUNICIPAL MAYOR' ? 'selected' : '' }}>MUNICIPAL MAYOR</option>
+                                        <option value="SENIOR ADMINISTRATIVE ASST. III (Private Secretary II)" {{ $employee->position === 'SENIOR ADMINISTRATIVE ASST. III (Private Secretary II)' ? 'selected' : '' }}>SENIOR ADMINISTRATIVE ASST. III (Private Secretary II)</option>
+                                        <option value="ADMINISTRATIVE OFFICER IV (Human Resource Management Officer II)" {{ $employee->position === 'ADMINISTRATIVE OFFICER IV (Human Resource Management Officer II)' ? 'selected' : '' }}>ADMINISTRATIVE OFFICER IV (Human Resource Management Officer II)</option>
+                                        <option value="ADMINISTRATIVE OFFICER III (Supply Officer II)" {{ $employee->position === 'ADMINISTRATIVE OFFICER III (Supply Officer II)' ? 'selected' : '' }}>ADMINISTRATIVE OFFICER III (Supply Officer II)</option>
+                                        <option value="INTERNAL AUDITOR I" {{ $employee->position === 'INTERNAL AUDITOR I' ? 'selected' : '' }}>INTERNAL AUDITOR I</option>
+                                        <option value="ADMINISTRATIVE AIDE V (Community Affairs Asst.)" {{ $employee->position === 'ADMINISTRATIVE AIDE V (Community Affairs Asst.)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE V (Community Affairs Asst.)</option>
+                                        <option value="ADMINISTRATIVE ASST. II (Human Resource Management Assistant)" {{ $employee->position === 'ADMINISTRATIVE ASST. II (Human Resource Management Assistant)' ? 'selected' : '' }}>ADMINISTRATIVE ASST. II (Human Resource Management Assistant)</option>
+                                        <option value="ADMINISTRATIVE ASST. II (Market Inspector II)" {{ $employee->position === 'ADMINISTRATIVE ASST. II (Market Inspector II)' ? 'selected' : '' }}>ADMINISTRATIVE ASST. II (Market Inspector II)</option>
+                                        <option value="License Inspector II" {{ $employee->position === 'License Inspector II' ? 'selected' : '' }}>License Inspector II</option>
+                                        <option value="ADMINISTRATIVE ASST. I (Computer Operator I)" {{ $employee->position === 'ADMINISTRATIVE ASST. I (Computer Operator I)' ? 'selected' : '' }}>ADMINISTRATIVE ASST. I (Computer Operator I)</option>
+                                        <option value="ADMINISTRATIVE AIDE III (Plumber I)" {{ $employee->position === 'ADMINISTRATIVE AIDE III (Plumber I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE III (Plumber I)</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="TOURISM OPERATIONS OFFICER I" {{ $employee->position === 'TOURISM OPERATIONS OFFICER I' ? 'selected' : '' }}>TOURISM OPERATIONS OFFICER I</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="MEAT INSPECTOR I" {{ $employee->position === 'MEAT INSPECTOR I' ? 'selected' : '' }}>MEAT INSPECTOR I</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="ADMINISTRATIVE OFFICER IV" {{ $employee->position === 'ADMINISTRATIVE OFFICER IV' ? 'selected' : '' }}>ADMINISTRATIVE OFFICER IV</option>
+                                        <option value="ADMINISTRATIVE ASSISTANT VI" {{ $employee->position === 'ADMINISTRATIVE ASSISTANT VI' ? 'selected' : '' }}>ADMINISTRATIVE ASSISTANT VI</option>
+                                        <option value="(Computer Operator III)" {{ $employee->position === '(Computer Operator III)' ? 'selected' : '' }}>(Computer Operator III)</option>
+                                        <option value="EXECUTIVE ASSISTANT II" {{ $employee->position === 'EXECUTIVE ASSISTANT II' ? 'selected' : '' }}>EXECUTIVE ASSISTANT II</option>
+                                        <option value="LABOR AND EMPLOYMENT OFFICER III" {{ $employee->position === 'LABOR AND EMPLOYMENT OFFICER III' ? 'selected' : '' }}>LABOR AND EMPLOYMENT OFFICER III</option>
+                                        <option value="MUN. VICE MAYOR" {{ $employee->position === 'MUN. VICE MAYOR' ? 'selected' : '' }}>MUN. VICE MAYOR</option>
+                                        <option value="SANGGUNIANG BAYAD MEMBER" {{ $employee->position === 'SANGGUNIANG BAYAD MEMBER' ? 'selected' : '' }}>SANGGUNIANG BAYAD MEMBER</option>
+                                        <option value="SANGGUNIANG BAYAD MEMBER (ABC President)" {{ $employee->position === 'SANGGUNIANG BAYAD MEMBER (ABC President)' ? 'selected' : '' }}>SANGGUNIANG BAYAD MEMBER (ABC President)</option>
+                                        <option value="SANGGUNIANG BAYAD MEMBER (PPSK President)" {{ $employee->position === 'SANGGUNIANG BAYAD MEMBER (PPSK President)' ? 'selected' : '' }}>SANGGUNIANG BAYAD MEMBER (PPSK President)</option>
+                                        <option value="SECRETARY TO THE SANGGUNIAN" {{ $employee->position === 'SECRETARY TO THE SANGGUNIAN' ? 'selected' : '' }}>SECRETARY TO THE SANGGUNIAN</option>
+                                        <option value="ADMINISTRATIVE AIDE VI (Clerk III)" {{ $employee->position === 'ADMINISTRATIVE AIDE VI (Clerk III)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE VI (Clerk III)</option>
+                                        <option value="ADMINISTRATIVE AIDE III (Driver I)" {{ $employee->position === 'ADMINISTRATIVE AIDE III (Driver I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE III (Driver I)</option>
+                                        <option value="LOCAL LEGISLATIVE STAFF OFFICER I" {{ $employee->position === 'LOCAL LEGISLATIVE STAFF OFFICER I' ? 'selected' : '' }}>LOCAL LEGISLATIVE STAFF OFFICER I</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="LOCAL LEGISLATIVE STAFF OFFICER I" {{ $employee->position === 'LOCAL LEGISLATIVE STAFF OFFICER I' ? 'selected' : '' }}>LOCAL LEGISLATIVE STAFF OFFICER I</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (Municipal Planning and Development Coordinator)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (Municipal Planning and Development Coordinator)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (Municipal Planning and Development Coordinator)</option>
+                                        <option value="ENVIRONMENTAL MANAGEMENT SPECIALIST I" {{ $employee->position === 'ENVIRONMENTAL MANAGEMENT SPECIALIST I' ? 'selected' : '' }}>ENVIRONMENTAL MANAGEMENT SPECIALIST I</option>
+                                        <option value="PLANNING ASSISTANT" {{ $employee->position === 'PLANNING ASSISTANT' ? 'selected' : '' }}>PLANNING ASSISTANT</option>
+                                        <option value="ADMINISTRATIVE AIDE VI (Draftsman)" {{ $employee->position === 'ADMINISTRATIVE AIDE VI (Draftsman)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE VI (Draftsman)</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (Municipal Budget Officer)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (Municipal Budget Officer)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (Municipal Budget Officer)</option>
+                                        <option value="BUDGET OFFICER II" {{ $employee->position === 'BUDGET OFFICER II' ? 'selected' : '' }}>BUDGET OFFICER II</option>
+                                        <option value="ADMINISTRATIVE ASST. II (Budgeting Assistant)" {{ $employee->position === 'ADMINISTRATIVE ASST. II (Budgeting Assistant)' ? 'selected' : '' }}>ADMINISTRATIVE ASST. II (Budgeting Assistant)</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (Municipal Accountant)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (Municipal Accountant)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (Municipal Accountant)</option>
+                                        <option value="ACCOUNTANT II" {{ $employee->position === 'ACCOUNTANT II' ? 'selected' : '' }}>ACCOUNTANT II</option>
+                                        <option value="ADMINISTRATIVE ASST. III (Senior Bookkeeper)" {{ $employee->position === 'ADMINISTRATIVE ASST. III (Senior Bookkeeper)' ? 'selected' : '' }}>ADMINISTRATIVE ASST. III (Senior Bookkeeper)</option>
+                                        <option value="ADMINISTRATIVE AIDE VI (Accounting Clerk II)" {{ $employee->position === 'ADMINISTRATIVE AIDE VI (Accounting Clerk II)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE VI (Accounting Clerk II)</option>
+                                        <option value="MUN. GOVT. DEPT.HEAD I (Municipal Treasurer I)" {{ $employee->position === 'MUN. GOVT. DEPT.HEAD I (Municipal Treasurer I)' ? 'selected' : '' }}>MUN. GOVT. DEPT.HEAD I (Municipal Treasurer I)</option>
+                                        <option value="MUN. GOVT. ASST. DEPT.HEAD I (Assistant Municipal Treasurer)" {{ $employee->position === 'MUN. GOVT. ASST. DEPT.HEAD I (Assistant Municipal Treasurer)' ? 'selected' : '' }}>MUN. GOVT. ASST. DEPT.HEAD I (Assistant Municipal Treasurer)</option>
+                                        <option value="ADMINISTRATIVE AIDE VI (Clerk III)" {{ $employee->position === 'ADMINISTRATIVE AIDE VI (Clerk III)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE VI (Clerk III)</option>
+                                        <option value="ADMINISTRATIVE AIDE IV (Clerk II)" {{ $employee->position === 'ADMINISTRATIVE AIDE IV (Clerk II)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE IV (Clerk II)</option>
+                                        <option value="ADMINISTRATIVE AIDE IV (Clerk II)" {{ $employee->position === 'ADMINISTRATIVE AIDE IV (Clerk II)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE IV (Clerk II)</option>
+                                        <option value="Revenue Collection Clerk III" {{ $employee->position === 'Revenue Collection Clerk III' ? 'selected' : '' }}>Revenue Collection Clerk III</option>
+                                        <option value="ADMINISTRATIVE ASST. I (Rev. Coll. Clerk II)" {{ $employee->position === 'ADMINISTRATIVE ASST. I (Rev. Coll. Clerk II)' ? 'selected' : '' }}>ADMINISTRATIVE ASST. I (Rev. Coll. Clerk II)</option>
+                                        <option value="ADMINISTRATIVE AIDE V (Rev. Coll. Clerk I)" {{ $employee->position === 'ADMINISTRATIVE AIDE V (Rev. Coll. Clerk I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE V (Rev. Coll. Clerk I)</option>
+                                        <option value="ADMINISTRATIVE AIDE V (Rev. Coll. Clerk I)" {{ $employee->position === 'ADMINISTRATIVE AIDE V (Rev. Coll. Clerk I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE V (Rev. Coll. Clerk I)</option>
+                                        <option value="ADMINISTRATIVE AIDE V (Rev. Coll. Clerk I)" {{ $employee->position === 'ADMINISTRATIVE AIDE V (Rev. Coll. Clerk I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE V (Rev. Coll. Clerk I)</option>
+                                        <option value="Revenue Collection Clerk I" {{ $employee->position === 'Revenue Collection Clerk I' ? 'selected' : '' }}>Revenue Collection Clerk I</option>
+                                        <option value="Revenue Collection Clerk I" {{ $employee->position === 'Revenue Collection Clerk I' ? 'selected' : '' }}>Revenue Collection Clerk I</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (Municipal Assessor)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (Municipal Assessor)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (Municipal Assessor)</option>
+                                        <option value="ADMINISTRATIVE ASST. III (Assessment Clerk III)" {{ $employee->position === 'ADMINISTRATIVE ASST. III (Assessment Clerk III)' ? 'selected' : '' }}>ADMINISTRATIVE ASST. III (Assessment Clerk III)</option>
+                                        <option value="ADMINISTRATIVE AIDE VI (Assessment Clerk II)" {{ $employee->position === 'ADMINISTRATIVE AIDE VI (Assessment Clerk II)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE VI (Assessment Clerk II)</option>
+                                        <option value="Assessment Clerk I" {{ $employee->position === 'Assessment Clerk I' ? 'selected' : '' }}>Assessment Clerk I</option>
+                                        <option value="Assessment Clerk I" {{ $employee->position === 'Assessment Clerk I' ? 'selected' : '' }}>Assessment Clerk I</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (Municipal Health Officer)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (Municipal Health Officer)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (Municipal Health Officer)</option>
+                                        <option value="NURSE II" {{ $employee->position === 'NURSE II' ? 'selected' : '' }}>NURSE II</option>
+                                        <option value="NURSE II" {{ $employee->position === 'NURSE II' ? 'selected' : '' }}>NURSE II</option>
+                                        <option value="MIDWIFE III" {{ $employee->position === 'MIDWIFE III' ? 'selected' : '' }}>MIDWIFE III</option>
+                                        <option value="MIDWIFE II" {{ $employee->position === 'MIDWIFE II' ? 'selected' : '' }}>MIDWIFE II</option>
+                                        <option value="MIDWIFE II" {{ $employee->position === 'MIDWIFE II' ? 'selected' : '' }}>MIDWIFE II</option>
+                                        <option value="MIDWIFE II" {{ $employee->position === 'MIDWIFE II' ? 'selected' : '' }}>MIDWIFE II</option>
+                                        <option value="MIDWIFE II" {{ $employee->position === 'MIDWIFE II' ? 'selected' : '' }}>MIDWIFE II</option>
+                                        <option value="SANITARY INSPECTOR l" {{ $employee->position === 'SANITARY INSPECTOR l' ? 'selected' : '' }}>SANITARY INSPECTOR l</option>
+                                        <option value="MIDWIFE I" {{ $employee->position === 'MIDWIFE I' ? 'selected' : '' }}>MIDWIFE I</option>
+                                        <option value="MIDWIFE I" {{ $employee->position === 'MIDWIFE I' ? 'selected' : '' }}>MIDWIFE I</option>
+                                        <option value="MIDWIFE I" {{ $employee->position === 'MIDWIFE I' ? 'selected' : '' }}>MIDWIFE I</option>
+                                        <option value="MEDICAL TECHNOLOGIST II" {{ $employee->position === 'MEDICAL TECHNOLOGIST II' ? 'selected' : '' }}>MEDICAL TECHNOLOGIST II</option>
+                                        <option value="DRIVER I" {{ $employee->position === 'DRIVER I' ? 'selected' : '' }}>DRIVER I</option>
+                                        <option value="NURSE II" {{ $employee->position === 'NURSE II' ? 'selected' : '' }}>NURSE II</option>
+                                        <option value="NURSE II" {{ $employee->position === 'NURSE II' ? 'selected' : '' }}>NURSE II</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (Municipal Civil Registrar)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (Municipal Civil Registrar)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (Municipal Civil Registrar)</option>
+                                        <option value="REGISTRATION OFFICER II" {{ $employee->position === 'REGISTRATION OFFICER II' ? 'selected' : '' }}>REGISTRATION OFFICER II</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (Municipal Social Welfare and Development Officer)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (Municipal Social Welfare and Development Officer)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (Municipal Social Welfare and Development Officer)</option>
+                                        <option value="SOCIAL WELFARE OFFICER II" {{ $employee->position === 'SOCIAL WELFARE OFFICER II' ? 'selected' : '' }}>SOCIAL WELFARE OFFICER II</option>
+                                        <option value="Social Welfare Assistant" {{ $employee->position === 'Social Welfare Assistant' ? 'selected' : '' }}>Social Welfare Assistant</option>
+                                        <option value="DAY CARE WORKER I" {{ $employee->position === 'DAY CARE WORKER I' ? 'selected' : '' }}>DAY CARE WORKER I</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (Municipal Agriculturist)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (Municipal Agriculturist)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (Municipal Agriculturist)</option>
+                                        <option value="AGRICULTURAL TECHNOLOGIST" {{ $employee->position === 'AGRICULTURAL TECHNOLOGIST' ? 'selected' : '' }}>AGRICULTURAL TECHNOLOGIST</option>
+                                        <option value="AGRICULTURAL TECHNOLOGIST" {{ $employee->position === 'AGRICULTURAL TECHNOLOGIST' ? 'selected' : '' }}>AGRICULTURAL TECHNOLOGIST</option>
+                                        <option value="AGRICULTURAL TECHNOLOGIST" {{ $employee->position === 'AGRICULTURAL TECHNOLOGIST' ? 'selected' : '' }}>AGRICULTURAL TECHNOLOGIST</option>
+                                        <option value="AGRICULTURAL TECHNICIAN II" {{ $employee->position === 'AGRICULTURAL TECHNICIAN II' ? 'selected' : '' }}>AGRICULTURAL TECHNICIAN II</option>
+                                        <option value="ADMINISTRATIVE AIDE I (Laborer I)" {{ $employee->position === 'ADMINISTRATIVE AIDE I (Laborer I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE I (Laborer I)</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (Municipal Engineer)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (Municipal Engineer)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (Municipal Engineer)</option>
+                                        <option value="ENGINEER II" {{ $employee->position === 'ENGINEER II' ? 'selected' : '' }}>ENGINEER II</option>
+                                        <option value="ADMINISTRATIVE AIDE III (Driver I)" {{ $employee->position === 'ADMINISTRATIVE AIDE III (Driver I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE III (Driver I)</option>
+                                        <option value="ADMINISTRATIVE AIDE III (Driver I)" {{ $employee->position === 'ADMINISTRATIVE AIDE III (Driver I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE III (Driver I)</option>
+                                        <option value="ADMINISTRATIVE AIDE III (Driver I)" {{ $employee->position === 'ADMINISTRATIVE AIDE III (Driver I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE III (Driver I)</option>
+                                        <option value="ADMINISTRATIVE AIDE III (Clerk I)" {{ $employee->position === 'ADMINISTRATIVE AIDE III (Clerk I)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE III (Clerk I)</option>
+                                        <option value="ADMINISTRATIVE AIDE III (Laborer II)" {{ $employee->position === 'ADMINISTRATIVE AIDE III (Laborer II)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE III (Laborer II)</option>
+                                        <option value="ENGINEER II" {{ $employee->position === 'ENGINEER II' ? 'selected' : '' }}>ENGINEER II</option>
+                                        <option value="ADMINISTRATIVE AIDE VI (MECHANIC II)" {{ $employee->position === 'ADMINISTRATIVE AIDE VI (MECHANIC II)' ? 'selected' : '' }}>ADMINISTRATIVE AIDE VI (MECHANIC II)</option>
+                                        <option value="MUN. GOVT. DEPT. HEAD I (LDRRMO)" {{ $employee->position === 'MUN. GOVT. DEPT. HEAD I (LDRRMO)' ? 'selected' : '' }}>MUN. GOVT. DEPT. HEAD I (LDRRMO)</option>
+                                        <option value="LOCAL DISASTER RISK REDUCTION MANAGEMENT OFFICER II (LDRRMO II)" {{ $employee->position === 'LOCAL DISASTER RISK REDUCTION MANAGEMENT OFFICER II (LDRRMO II)' ? 'selected' : '' }}>LOCAL DISASTER RISK REDUCTION MANAGEMENT OFFICER II (LDRRMO II)</option>
+                                        <option value="LOCAL DISASTER RISK REDUCTION MANAGEMENT ASSISTANT (LDRRMA)" {{ $employee->position === 'LOCAL DISASTER RISK REDUCTION MANAGEMENT ASSISTANT (LDRRMA)' ? 'selected' : '' }}>LOCAL DISASTER RISK REDUCTION MANAGEMENT ASSISTANT (LDRRMA)</option>
+
+                                    </select>
+                                </div>
+
                                     <div class="form-group col-md-4 m-t-20">
                                         <label>Date Of Joining</label>
                                         <input type="hidden" name="id" value="{{$employee->id}}">

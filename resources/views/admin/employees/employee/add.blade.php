@@ -318,40 +318,36 @@
                                     <div class="form-group col-md-4 m-t-20">
                                         <label>Department</label>
                                         <select name="department" class="form-control custom-select" required>
-                                            <option>Select Department</option>
-                                            <option value="Municipal Agricultural Services Office">Municipal Agricultural Services Office</option>
-                                            <option value="Municipal Social Welfare & Development Office">Municipal Social Welfare & Development Office</option>
-                                            <option value="Municipal Assessor's Office">Municipal Assessor's Office</option>
-                                            <option value="Commision on Election">Commision on Election</option>
-                                            <option value="Local Civil Registrar">Local Civil Registrar</option>
-                                            <option value="Budget Office">Budget Office</option>
-                                            <option value="BOMWASA AND BIR">BOMWASA</option>
-                                            <option value="BOMWASA AND BIR">BIR</option>
-                                            <option value="Accounting Office">Accounting Office</option>
-                                            <option value="PESO">PESO</option>
-                                            <option value="Municipal Treasurer's Office">Municipal Treasurer's Office</option>
-                                            <!-- <option value="Cogressman's Office">Congressman's Office</option> -->
-                                            <option value="Human Resource Management Office">Human Resource Management Office</option>
-                                            <option value="MPDC">MPDC</option>
-                                            <option value="KALAHI">KALAHI</option>
-                                            <option value="Office of the Sangguniang Bayan">Office of the Sangguniang Bayan</option>
-                                            <option value="Office of the Vice-Mayor">Office of the Vice-Mayor</option>
+                                            <option disabled selected>Select Department</option>
                                             <option value="Office of the Mayor">Office of the Mayor</option>
-                                            <option value="Engineering Office">Engineering Office</option>
-                                            <option value="MENRO">MENRO</option>
-                                            <option value="Tourism">Tourism</option>
+                                            <option value="Office of the Mayor - Bids and Awards Committee">Office of the Mayor - Bids and Awards Committee</option>
+                                            <option value="Office of the Mayor - Bureau of Internal Revenue">Office of the Mayor - Bureau of Internal Revenue</option>
+                                            <option value="Office of the Mayor - BOMWASA">Office of the Mayor - BOMWASA</option>
+                                            <option value="Office of the Mayor - Commission on Elections">Office of the Mayor - Commission on Elections</option>
+                                            <option value="Office of the Mayor - Department of the Interior and Local Government">Office of the Mayor - Department of the Interior and Local Government</option>
+                                            <option value="Office of the Mayor - Motorpool">Office of the Mayor - Motorpool</option>
+                                            <option value="Office of the Mayor - General Services Office">Office of the Mayor - General Services Office</option>
+                                            <option value="Office of the Mayor - Human Resource Management Office">Office of the Mayor - Human Resource Management Office</option>
+                                            <option value="Office of the Mayor - Municipal Tourism Office">Office of the Mayor - Municipal Tourism Office</option>
+                                            <option value="Office of the Mayor - Municipal Environment and Natural Resources Office">Office of the Mayor - Municipal Environment and Natural Resources Office</option>
+                                            
+                                            <option value="Office of the Sangguniang Bayan">Office of the Sangguniang Bayan</option>
+                                            <option value="Municipal Agricultural Services Office">Municipal Agricultural Services Office</option>
+                                            <option value="Municipal Disaster Risk Reduction and Management Office">Municipal Disaster Risk Reduction and Management Office</option>
+                                            
+                                            <option value="Municipal Social Welfare and Development Office">Municipal Social Welfare and Development Office</option>
+                                            <option value="Municipal Social Welfare and Development Office - 4Ps">Municipal Social Welfare and Development Office - 4Ps</option>
+                                            <option value="Municipal Social Welfare and Development Office - KALAHI">Municipal Social Welfare and Development Office - KALAHI</option>
+                                            <option value="Municipal Social Welfare and Development Office - Office of Senior Citizens Affairs (OSCA)">Municipal Social Welfare and Development Office - Office of Senior Citizens Affairs (OSCA)</option>
+                                            
+                                            <option value="Office of the Municipal Accountant">Office of the Municipal Accountant</option>
+                                            <option value="Office of the Municipal Assessor">Office of the Municipal Assessor</option>
+                                            <option value="Office of the Municipal Budget Officer">Office of the Municipal Budget Officer</option>
+                                            <option value="Office of the Municipal Civil Registrar">Office of the Municipal Civil Registrar</option>
+                                            <option value="Office of the Municipal Engineer">Office of the Municipal Engineer</option>
+                                            <option value="Office of the Municipal Planning and Development Coordinator">Office of the Municipal Planning and Development Coordinator</option>
+                                            <option value="Office of the Municipal Treasurer">Office of the Municipal Treasurer</option>
                                             <option value="Rural Health Unit">Rural Health Unit</option>
-                                            <option value="DILG">DILG</option>
-                                            <option value="MDRR">MDRRMO</option>
-                                            <option value="GSO">GSO</option>
-                                            <option value="GSO - SUPPLY">GSO - SUPPLY</option>
-                                            <option value="MSWDO - OSCA">MSWDO - OSCA</option>
-                                            <option value="MOTORPOOL">MOTORPOOL</option>
-                                            <option value="MSWDO - KALAHI">MSWDO - KALAHI</option>
-                                            <option value="BAC">BAC</option>
-                                            <option value="MSWDO - 4Ps">MSWDO - 4Ps</option>
-                                            <option value="BLPO (MTO)">BLPO (MTO)</option>
-                                            <option value="Department of Trade and Industry">Department of Trade and Industry</option>
 
                                         </select>
                                     </div>
